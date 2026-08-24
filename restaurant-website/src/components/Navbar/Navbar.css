@@ -1,0 +1,120 @@
+.navbar {
+    position: relative;
+    background-color: var(--bg-primary);
+    border-bottom: 1px solid var(--border-primary);
+    height: var(--navbar-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+nav img {
+    height: 75px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.link {
+    color: var(--text-secondary);
+    transition: var(--transition-normal);
+    position: relative;
+}
+
+.link.active{
+    color: var(--accent-primary);
+}
+
+.link.active::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+
+    width: 100%;
+    height: 2px;
+
+    background: var(--accent-primary);
+}
+
+.link:hover{
+    color: var(--accent-primary);
+}
+
+.login-link {
+    list-style: none;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.login img {
+    height: 50px;
+}
+
+.dropdown-btn{
+  display: none;
+  background-color: var(--bg-primary);
+}
+
+@media (max-width: 1024px) {
+    nav img {
+        height: 50px;
+    }
+
+    .login img {
+        height: 30px;
+    }
+
+    .nav-links {
+        gap: 13px;
+    }
+
+    .link {
+        font-size: 14px;
+    }
+
+}
+
+
+@media (max-width: 768px){
+
+  .dropdown-btn{
+    display: block;
+    background: transparent;
+    border: none;
+    z-index: 10;
+    width: 86.55px;
+  }
+
+  .dropdown-btn img{
+    height: 40px;
+  }
+
+  .nav-links{
+    display: none;
+  }
+
+  .nav-links.open{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    width: 100%;
+    background: var(--bg-secondary);
+    padding: 25px 30px;
+
+    z-index: 999;
+    border-bottom: 1px solid var(--border-primary);
+  }
+}
