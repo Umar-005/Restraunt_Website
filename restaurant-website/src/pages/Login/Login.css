@@ -1,0 +1,99 @@
+.login-page {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    box-sizing: border-box;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 450px;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-primary);
+    border-radius: var(--radius-sm);
+}
+
+.login-card h1 {
+    margin: 0 0 10px;
+    font-family: var(--font-heading);
+    font-size: var(--text-2xl);
+    font-weight: var(--fw-regular);
+    text-transform: uppercase;
+}
+
+.login-card > p {
+    margin: 0 0 30px;
+    color: var(--text-secondary);
+    font-size: var(--text-sm);
+    line-height: 1.6;
+}
+
+.login-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login-card label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: var(--text-sm);
+}
+
+.login-card input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px;
+    background-color: var(--bg-primary);
+    border: 1px solid var(--border-primary);
+    border-radius: var(--radius-sm);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    font-size: var(--text-sm);
+    outline: none;
+}
+
+.login-card input:focus {
+    border-color: var(--accent-primary);
+}
+
+.login-card input::placeholder {
+    color: var(--text-muted);
+}
+
+.login-card button {
+    margin-top: 5px;
+    padding: 15px;
+    background-color: var(--accent-primary);
+    border: none;
+    border-radius: var(--radius-sm);
+    color: var(--text-primary);
+    font-size: var(--text-sm);
+    font-weight: var(--fw-semibold);
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.login-card button:hover {
+    background-color: var(--accent-hover);
+}
+
+.login-card button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.login-error {
+    margin: 0;
+    padding: 12px;
+    background-color: var(--bg-primary);
+    border: 1px solid #8b3a3a;
+    border-radius: var(--radius-sm);
+    color: #e58b8b;
+    font-size: var(--text-sm);
+}

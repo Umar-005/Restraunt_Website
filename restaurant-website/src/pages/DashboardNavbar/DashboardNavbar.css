@@ -1,0 +1,109 @@
+.dashboard-sidebar {
+    width: 240px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 30px 18px;
+    background-color: var(--bg-card);
+    border-right: 1px solid var(--border-primary);
+}
+
+/* BRAND */
+.dashboard-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--border-primary);
+}
+
+.dashboard-logo {
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* NAVIGATION */
+.dashboard-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 25px;
+}
+
+.dashboard-nav-link {
+    display: block;
+    padding: 12px 15px;
+    box-sizing: border-box;
+    border-radius: var(--radius-sm);
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: var(--text-sm);
+    transition: var(--transition-fast);
+}
+
+.dashboard-nav-link:hover {
+    color: var(--accent-primary);
+    background-color: rgba(200, 116, 52, 0.06);
+}
+
+.dashboard-nav-link.active {
+    color: var(--accent-primary);
+    background-color: rgba(200, 116, 52, 0.1);
+    border-left: 2px solid var(--accent-primary);
+}
+
+/* BOTTOM */
+.dashboard-sidebar-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: auto;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-primary);
+}
+
+.dashboard-logout {
+    width: 100%;
+    padding: 12px 15px;
+    background: transparent;
+    border: none;
+    border-radius: var(--radius-sm);
+    color: var(--text-muted);
+    text-align: left;
+    font-family: var(--font-body);
+    font-size: var(--text-sm);
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.dashboard-logout:hover {
+    color: #bd6666;
+    background-color: rgba(189, 102, 102, 0.06);
+}
+
+/* RESPONSIVE */
+@media (max-width: 800px) {
+    .dashboard-sidebar {
+        width: 200px;
+    }
+}
+
+@media (max-width: 650px) {
+    .dashboard-sidebar {
+        width: 100%;
+        min-height: auto;
+        border-right: none;
+        border-bottom: 1px solid var(--border-primary);
+    }
+
+    .dashboard-nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .dashboard-sidebar-bottom {
+        margin-top: 20px;
+    }
+}
