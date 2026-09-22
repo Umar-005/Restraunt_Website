@@ -45,7 +45,7 @@ The project demonstrates full-stack development, REST API integration, authentic
 
 ### Homepage
 
-![Homepage](screenshots/homepage.png)
+![Homepage](screenshots/home.png)
 
 ### Menu
 
