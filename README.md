@@ -61,7 +61,7 @@ The project demonstrates full-stack development, REST API integration, authentic
 
 ### Staff Dashboard
 
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](screenshots/dashbaord.png)
 
 ## Tech Stack
 
