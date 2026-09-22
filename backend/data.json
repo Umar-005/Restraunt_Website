@@ -1,0 +1,1631 @@
+[
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$1JG3wIMXXfLI4cFUXTOVMI$+Tt6CEVg5scuIJ4Q0tc4ZLglbINSWOLq5TZRTpZUBrA=",
+    "last_login": "2026-09-14T15:35:28.693Z",
+    "is_superuser": true,
+    "username": "umar",
+    "first_name": "",
+    "last_name": "",
+    "email": "u7m8a6r@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-08-24T22:28:59.702Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1500000$mqlljgI8F0OR1gvxZelugH$BjfEHM8K4aWgKr2hQ6ziFRYBNaDJ1d33IhujWbV5hiA=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "test",
+    "first_name": "",
+    "last_name": "",
+    "email": "test@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-09-14T16:05:50.921Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "s1aii926l91e2038kgy38a3vb0w4j412",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hDAAoNL9z0DmWFAqoYmpV0Z765NutDtf-_9l4i4rTVuPS9xYnERWpx-N8L0yG0HfMd2m2Wa27pMJHdFHrTLceb8vB7u30HFXr-18TaFsyrKEWtFBFzQW8DBDMVTgICGUTuEoJLRzMohki6WAdCFzOL9Aea1OF4:1wzKm6:RPBbQM4SntyuVlskMY6E0uxtGSkWC80PTVqNStFEqnI",
+    "expire_date": "2026-09-09T21:03:10.311Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "sgtoyuvm4ght5iy89z1fbiuswep4kffs",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hDAAoNL9z0DmWFAqoYmpV0Z765NutDtf-_9l4i4rTVuPS9xYnERWpx-N8L0yG0HfMd2m2Wa27pMJHdFHrTLceb8vB7u30HFXr-18TaFsyrKEWtFBFzQW8DBDMVTgICGUTuEoJLRzMohki6WAdCFzOL9Aea1OF4:1x68iO:QFjcFiVoS6Jtef6sR_IC_PbVc4DhhVOAp0xyqMmrCuM",
+    "expire_date": "2026-09-28T15:35:28.697Z"
+  }
+},
+{
+  "model": "authtoken.token",
+  "pk": "2f5904c85dfae8e746395d931959ef48ced28bdc",
+  "fields": {
+    "user": [
+      "test"
+    ],
+    "created": "2026-09-14T16:06:24.767Z"
+  }
+},
+{
+  "model": "authtoken.token",
+  "pk": "54cb1ea5cc46c0c650d8462f12f87b84ac0c0456",
+  "fields": {
+    "user": [
+      "umar"
+    ],
+    "created": "2026-08-27T14:08:28.431Z"
+  }
+},
+{
+  "model": "restaurant.menuitem",
+  "pk": 1,
+  "fields": {
+    "name": "Burrata & Heirloom Tomatoes",
+    "description": "Creamy burrata with ripe heirloom tomatoes, basil and extra virgin olive oil",
+    "price": "11.50",
+    "category": "Starters",
+    "available": true,
+    "image": "menu/Burrata__Heirloom_Tomatoes.png"
+  }
+},
+{
+  "model": "restaurant.menuitem",
+  "pk": 2,
+  "fields": {
+    "name": "Wood-Fired Prawns",
+    "description": "King prawns grilled over wood fire with garlic, chilli and lemon",
+    "price": "13.50",
+    "category": "Starters",
+    "available": true,
+    "image": "menu/Wood-Fired_Prawns.png"
+  }
+},
+{
+  "model": "restaurant.menuitem",
+  "pk": 3,
+  "fields": {
+    "name": "Smoked Beef Carpaccio",
+    "description": "Thinly sliced smoked beef with Parmesan, rocket and truffle dressing",
+    "price": "14.00",
+    "category": "Starters",
+    "available": true,
+    "image": "menu/Smoked_Beef_Carpaccio.png"
+  }
+},
+{
+  "model": "restaurant.menuitem",
+  "pk": 4,
+  "fields": {
+    "name": "Wild Mushroom Arancini",
+    "description": "Crispy risotto balls filled with wild mushrooms, mozzarella and Parmesan",
+    "price": "10.50",
+    "category": "Starters",
+    "available": true,
+    "image": "menu/Wild_Mushroom_Arancini.png"
+  }
+},
+{
+  "model": "restaurant.menuitem",
+  "pk": 5,
+  "fields": {
+    "name": "Signature Ribeye",
+    "description": "Chargrilled ribeye steak served with rosemary butter and roasted garlic",
+    "price": "28.00",
+    "category": "Mains",
+    "available": true,
+    "image": "menu/Signature_Ribeye.png"
+  }
+},
+{
+  "model": "restaurant.menuitem",
+  "pk": 6,
+  "fields": {
+    "name": "Wood-Fired Salmon",
+    "description": "Wood-fired salmon fillet with lemon, herbs and seasonal vegetables",
+    "price": "22.00",
+    "category": "Mains",
+    "available": true,
+    "image": "menu/Wood-Fired_Salmon.png"
+  }
+},
+{
+  "model": "restaurant.menuitem",
+  "pk": 7,
+  "fields": {
+    "name": "Truffle Pasta",
+    "description": "Fresh pasta with creamy truffle sauce, Parmesan and black truffle",
+    "price": "19.50",
+    "category": "Mains",
+    "available": true,
+    "image": "menu/Truffle_Pasta.png"
+  }
+},
+{
+  "model": "restaurant.menuitem",
+  "pk": 8,
+  "fields": {
+    "name": "Spiced Lamb Chops",
+    "description": "Chargrilled lamb chops with aromatic spices, mint yoghurt and herbs",
+    "price": "24.00",
+    "category": "Mains",
+    "available": true,
+    "image": "menu/Spiced_Lamb_Chops.png"
+  }
+},
+{
+  "model": "restaurant.menuitem",
+  "pk": 9,
+  "fields": {
+    "name": "Rosemary Potatoes",
+    "description": "Crispy roasted potatoes with fresh rosemary and sea salt",
+    "price": "5.50",
+    "category": "Sides",
+    "available": true,
+    "image": "menu/Rosemary_Potatoes.png"
+  }
+},
+{
+  "model": "restaurant.menuitem",
+  "pk": 10,
+  "fields": {
+    "name": "Grilled Asparagus",
+    "description": "Chargrilled asparagus with lemon and Parmesan",
+    "price": "6.00",
+    "category": "Sides",
+    "available": true,
+    "image": "menu/Grilled_Asparagus.png"
+  }
+},
+{
+  "model": "restaurant.menuitem",
+  "pk": 11,
+  "fields": {
+    "name": "Truffle Mac & Cheese",
+    "description": "Creamy macaroni with mature cheddar, Parmesan and truffle",
+    "price": "7.50",
+    "category": "Sides",
+    "available": true,
+    "image": "menu/Truffle_Mac__Cheese.png"
+  }
+},
+{
+  "model": "restaurant.menuitem",
+  "pk": 12,
+  "fields": {
+    "name": "Charred Broccolini",
+    "description": "Charred tenderstem broccoli with garlic, chilli and lemon",
+    "price": "6.00",
+    "category": "Sides",
+    "available": true,
+    "image": "menu/Charred_Broccolini.png"
+  }
+},
+{
+  "model": "restaurant.menuitem",
+  "pk": 13,
+  "fields": {
+    "name": "Chocolate Fondant",
+    "description": "Warm chocolate fondant with a rich molten centre and vanilla ice cream",
+    "price": "8.50",
+    "category": "Desserts",
+    "available": true,
+    "image": "menu/Chocolate_Fondant.png"
+  }
+},
+{
+  "model": "restaurant.menuitem",
+  "pk": 14,
+  "fields": {
+    "name": "Burnt Basque Cheesecake",
+    "description": "Creamy Basque-style cheesecake with a caramelised top",
+    "price": "8.00",
+    "category": "Desserts",
+    "available": true,
+    "image": "menu/Burnt_Basque_Cheesecake.png"
+  }
+},
+{
+  "model": "restaurant.menuitem",
+  "pk": 15,
+  "fields": {
+    "name": "Tiramisu",
+    "description": "Classic Italian dessert with espresso-soaked ladyfingers, mascarpone and cocoa",
+    "price": "8.00",
+    "category": "Desserts",
+    "available": true,
+    "image": "menu/Tiramisu_apuZdvU.png"
+  }
+},
+{
+  "model": "restaurant.menuitem",
+  "pk": 16,
+  "fields": {
+    "name": "Affogato",
+    "description": "Vanilla gelato served with a shot of hot espresso",
+    "price": "6.50",
+    "category": "Desserts",
+    "available": true,
+    "image": "menu/Affogato_OXAOiR5.png"
+  }
+},
+{
+  "model": "restaurant.menuitem",
+  "pk": 17,
+  "fields": {
+    "name": "Mojito",
+    "description": "White rum, fresh lime, mint, sugar and soda water",
+    "price": "10.00",
+    "category": "Drinks",
+    "available": true,
+    "image": "menu/Mojito_7qf1mSC.png"
+  }
+},
+{
+  "model": "restaurant.menuitem",
+  "pk": 18,
+  "fields": {
+    "name": "Negroni",
+    "description": "Gin, Campari and sweet vermouth",
+    "price": "11.00",
+    "category": "Drinks",
+    "available": true,
+    "image": "menu/Negroni_xg6slYB.png"
+  }
+},
+{
+  "model": "restaurant.menuitem",
+  "pk": 19,
+  "fields": {
+    "name": "Red Wine",
+    "description": "House red wine, served by the glass",
+    "price": "8.00",
+    "category": "Drinks",
+    "available": true,
+    "image": "menu/Red_Wine.png"
+  }
+},
+{
+  "model": "restaurant.menuitem",
+  "pk": 20,
+  "fields": {
+    "name": "Sparkling Water",
+    "description": "Chilled sparkling mineral water",
+    "price": "3.50",
+    "category": "Drinks",
+    "available": true,
+    "image": "menu/Sparkling_Water.png"
+  }
+},
+{
+  "model": "restaurant.restauranttable",
+  "pk": 1,
+  "fields": {
+    "table_number": 1,
+    "seats": 2
+  }
+},
+{
+  "model": "restaurant.restauranttable",
+  "pk": 2,
+  "fields": {
+    "table_number": 2,
+    "seats": 2
+  }
+},
+{
+  "model": "restaurant.restauranttable",
+  "pk": 3,
+  "fields": {
+    "table_number": 3,
+    "seats": 2
+  }
+},
+{
+  "model": "restaurant.restauranttable",
+  "pk": 4,
+  "fields": {
+    "table_number": 4,
+    "seats": 2
+  }
+},
+{
+  "model": "restaurant.restauranttable",
+  "pk": 5,
+  "fields": {
+    "table_number": 5,
+    "seats": 2
+  }
+},
+{
+  "model": "restaurant.restauranttable",
+  "pk": 6,
+  "fields": {
+    "table_number": 6,
+    "seats": 2
+  }
+},
+{
+  "model": "restaurant.restauranttable",
+  "pk": 7,
+  "fields": {
+    "table_number": 7,
+    "seats": 4
+  }
+},
+{
+  "model": "restaurant.restauranttable",
+  "pk": 8,
+  "fields": {
+    "table_number": 8,
+    "seats": 4
+  }
+},
+{
+  "model": "restaurant.restauranttable",
+  "pk": 9,
+  "fields": {
+    "table_number": 9,
+    "seats": 4
+  }
+},
+{
+  "model": "restaurant.restauranttable",
+  "pk": 10,
+  "fields": {
+    "table_number": 10,
+    "seats": 4
+  }
+},
+{
+  "model": "restaurant.restauranttable",
+  "pk": 11,
+  "fields": {
+    "table_number": 11,
+    "seats": 4
+  }
+},
+{
+  "model": "restaurant.restauranttable",
+  "pk": 12,
+  "fields": {
+    "table_number": 12,
+    "seats": 4
+  }
+},
+{
+  "model": "restaurant.restauranttable",
+  "pk": 13,
+  "fields": {
+    "table_number": 13,
+    "seats": 6
+  }
+},
+{
+  "model": "restaurant.restauranttable",
+  "pk": 14,
+  "fields": {
+    "table_number": 14,
+    "seats": 6
+  }
+},
+{
+  "model": "restaurant.restauranttable",
+  "pk": 15,
+  "fields": {
+    "table_number": 15,
+    "seats": 6
+  }
+},
+{
+  "model": "restaurant.restauranttable",
+  "pk": 16,
+  "fields": {
+    "table_number": 16,
+    "seats": 6
+  }
+},
+{
+  "model": "restaurant.reservation",
+  "pk": 1,
+  "fields": {
+    "name": "test",
+    "email": "test@example.com",
+    "phone": "07123456789",
+    "date": "2027-02-11",
+    "time": "12:21:00",
+    "party_size": 2,
+    "table": 1,
+    "status": "Cancelled",
+    "created_at": "2026-08-26T20:29:58.667Z"
+  }
+},
+{
+  "model": "restaurant.reservation",
+  "pk": 2,
+  "fields": {
+    "name": "test",
+    "email": "test@example.com",
+    "phone": "07123456789",
+    "date": "2027-02-11",
+    "time": "12:21:00",
+    "party_size": 2,
+    "table": 2,
+    "status": "Confirmed",
+    "created_at": "2026-08-26T20:32:25.970Z"
+  }
+},
+{
+  "model": "restaurant.reservation",
+  "pk": 3,
+  "fields": {
+    "name": "Umar Hussain",
+    "email": "test@gmail.com",
+    "phone": "12211212",
+    "date": "2026-08-28",
+    "time": "17:30:00",
+    "party_size": 3,
+    "table": 7,
+    "status": "Pending",
+    "created_at": "2026-08-26T21:02:30.353Z"
+  }
+},
+{
+  "model": "restaurant.reservation",
+  "pk": 4,
+  "fields": {
+    "name": "asas",
+    "email": "asas@gmail.com",
+    "phone": "212121",
+    "date": "2026-08-26",
+    "time": "17:00:00",
+    "party_size": 5,
+    "table": 13,
+    "status": "Pending",
+    "created_at": "2026-08-26T21:05:30.928Z"
+  }
+},
+{
+  "model": "restaurant.reservation",
+  "pk": 5,
+  "fields": {
+    "name": "sdds",
+    "email": "text@gmail.com",
+    "phone": "213213",
+    "date": "2026-08-28",
+    "time": "18:00:00",
+    "party_size": 2,
+    "table": 1,
+    "status": "Pending",
+    "created_at": "2026-08-26T21:40:17.685Z"
+  }
+},
+{
+  "model": "restaurant.reservation",
+  "pk": 6,
+  "fields": {
+    "name": "Umar",
+    "email": "random@gmail.com",
+    "phone": "0218672187",
+    "date": "2026-08-29",
+    "time": "17:30:00",
+    "party_size": 3,
+    "table": 7,
+    "status": "Pending",
+    "created_at": "2026-08-27T11:07:06.930Z"
+  }
+},
+{
+  "model": "restaurant.reservation",
+  "pk": 7,
+  "fields": {
+    "name": "ygyt",
+    "email": "test@gmail.com",
+    "phone": "tytyty",
+    "date": "2026-08-30",
+    "time": "17:30:00",
+    "party_size": 1,
+    "table": 1,
+    "status": "Pending",
+    "created_at": "2026-08-27T11:08:19.135Z"
+  }
+},
+{
+  "model": "restaurant.reservation",
+  "pk": 8,
+  "fields": {
+    "name": "ewrerw",
+    "email": "ewrew@gmail.com",
+    "phone": "2132121",
+    "date": "2026-09-18",
+    "time": "17:30:00",
+    "party_size": 3,
+    "table": 7,
+    "status": "Pending",
+    "created_at": "2026-08-27T18:06:55.223Z"
+  }
+},
+{
+  "model": "restaurant.reservation",
+  "pk": 9,
+  "fields": {
+    "name": "Umar Hussain",
+    "email": "u@gmail.com",
+    "phone": "23121",
+    "date": "2026-09-22",
+    "time": "17:30:00",
+    "party_size": 2,
+    "table": 1,
+    "status": "Pending",
+    "created_at": "2026-08-27T18:07:52.470Z"
+  }
+},
+{
+  "model": "restaurant.reservation",
+  "pk": 10,
+  "fields": {
+    "name": "ewqweq",
+    "email": "ewqwq@gmail.com",
+    "phone": "231321",
+    "date": "2026-09-20",
+    "time": "17:00:00",
+    "party_size": 2,
+    "table": 1,
+    "status": "Pending",
+    "created_at": "2026-09-14T17:07:06.925Z"
+  }
+},
+{
+  "model": "restaurant.reservation",
+  "pk": 11,
+  "fields": {
+    "name": "rtewqe4qwr",
+    "email": "terwert@gmail.com",
+    "phone": "231213",
+    "date": "2026-10-11",
+    "time": "18:00:00",
+    "party_size": 2,
+    "table": 1,
+    "status": "Pending",
+    "created_at": "2026-09-15T22:33:16.016Z"
+  }
+},
+{
+  "model": "restaurant.reservation",
+  "pk": 12,
+  "fields": {
+    "name": "ewrqerw",
+    "email": "32reqrew@gmai.com",
+    "phone": "e23123",
+    "date": "2026-10-11",
+    "time": "19:00:00",
+    "party_size": 3,
+    "table": 7,
+    "status": "Pending",
+    "created_at": "2026-09-15T22:43:32.771Z"
+  }
+},
+{
+  "model": "restaurant.order",
+  "pk": 1,
+  "fields": {
+    "name": "Test Customer",
+    "email": "unknown@example.com",
+    "phone": "07123456789",
+    "address": "Manchester",
+    "delivery_method": "Delivery",
+    "payment_method": "Card",
+    "status": "Completed",
+    "total": "23.00",
+    "created_at": "2026-08-26T20:49:21.087Z"
+  }
+},
+{
+  "model": "restaurant.order",
+  "pk": 2,
+  "fields": {
+    "name": "Test Customer",
+    "email": "unknown@example.com",
+    "phone": "07123456789",
+    "address": "Manchester",
+    "delivery_method": "Delivery",
+    "payment_method": "Card",
+    "status": "Confirmed",
+    "total": "23.00",
+    "created_at": "2026-08-26T20:51:32.336Z"
+  }
+},
+{
+  "model": "restaurant.order",
+  "pk": 3,
+  "fields": {
+    "name": "Test Customer",
+    "email": "unknown@example.com",
+    "phone": "07123456789",
+    "address": "Manchester",
+    "delivery_method": "Delivery",
+    "payment_method": "Card",
+    "status": "Completed",
+    "total": "23.00",
+    "created_at": "2026-08-26T20:52:40.449Z"
+  }
+},
+{
+  "model": "restaurant.order",
+  "pk": 4,
+  "fields": {
+    "name": "Test Customer",
+    "email": "unknown@example.com",
+    "phone": "07123456789",
+    "address": "",
+    "delivery_method": "Pickup",
+    "payment_method": "Card",
+    "status": "Cancelled",
+    "total": "11.50",
+    "created_at": "2026-08-26T21:17:17.179Z"
+  }
+},
+{
+  "model": "restaurant.order",
+  "pk": 5,
+  "fields": {
+    "name": "qweewq",
+    "email": "unknown@example.com",
+    "phone": "123231321",
+    "address": "2121wqewqe",
+    "delivery_method": "Delivery",
+    "payment_method": "Card",
+    "status": "Pending",
+    "total": "75.00",
+    "created_at": "2026-08-26T21:22:59.876Z"
+  }
+},
+{
+  "model": "restaurant.order",
+  "pk": 6,
+  "fields": {
+    "name": "qweewq",
+    "email": "unknown@example.com",
+    "phone": "123231321",
+    "address": "",
+    "delivery_method": "Pickup",
+    "payment_method": "Card",
+    "status": "Pending",
+    "total": "75.00",
+    "created_at": "2026-08-26T21:23:06.270Z"
+  }
+},
+{
+  "model": "restaurant.order",
+  "pk": 7,
+  "fields": {
+    "name": "wqwq",
+    "email": "unknown@example.com",
+    "phone": "2121",
+    "address": "2121",
+    "delivery_method": "Delivery",
+    "payment_method": "Card",
+    "status": "Pending",
+    "total": "75.00",
+    "created_at": "2026-08-26T21:37:18.480Z"
+  }
+},
+{
+  "model": "restaurant.order",
+  "pk": 8,
+  "fields": {
+    "name": "wqeweqwq",
+    "email": "unknown@example.com",
+    "phone": "3221321",
+    "address": "12312",
+    "delivery_method": "Delivery",
+    "payment_method": "Card",
+    "status": "Pending",
+    "total": "329.00",
+    "created_at": "2026-08-27T11:14:01.231Z"
+  }
+},
+{
+  "model": "restaurant.order",
+  "pk": 9,
+  "fields": {
+    "name": "testgdfdf",
+    "email": "unknown@example.com",
+    "phone": "453342",
+    "address": "322weq",
+    "delivery_method": "Delivery",
+    "payment_method": "Cash",
+    "status": "Pending",
+    "total": "666.00",
+    "created_at": "2026-08-27T17:57:04.751Z"
+  }
+},
+{
+  "model": "restaurant.order",
+  "pk": 10,
+  "fields": {
+    "name": "rewe",
+    "email": "unknown@example.com",
+    "phone": "32324",
+    "address": "",
+    "delivery_method": "Pickup",
+    "payment_method": "Card",
+    "status": "Pending",
+    "total": "61.50",
+    "created_at": "2026-08-27T18:05:59.596Z"
+  }
+},
+{
+  "model": "restaurant.order",
+  "pk": 11,
+  "fields": {
+    "name": "umar",
+    "email": "u7m8a6r@gmail.com",
+    "phone": "0323212121",
+    "address": "qew21",
+    "delivery_method": "Delivery",
+    "payment_method": "Card",
+    "status": "Pending",
+    "total": "141.00",
+    "created_at": "2026-09-14T17:05:56.172Z"
+  }
+},
+{
+  "model": "restaurant.order",
+  "pk": 12,
+  "fields": {
+    "name": "tyy",
+    "email": "ytuytu@jmail.cpm",
+    "phone": "344355",
+    "address": "4343",
+    "delivery_method": "Delivery",
+    "payment_method": "Card",
+    "status": "Pending",
+    "total": "40.50",
+    "created_at": "2026-09-15T22:29:35.270Z"
+  }
+},
+{
+  "model": "restaurant.order",
+  "pk": 13,
+  "fields": {
+    "name": "ewreewr",
+    "email": "31232@hmaisoi.cpjdsnm",
+    "phone": "3214123",
+    "address": "ewq21321",
+    "delivery_method": "Delivery",
+    "payment_method": "Card",
+    "status": "Pending",
+    "total": "78.00",
+    "created_at": "2026-09-15T22:42:58.792Z"
+  }
+},
+{
+  "model": "restaurant.orderitem",
+  "pk": 1,
+  "fields": {
+    "order": 2,
+    "menu_item": 1,
+    "quantity": 2,
+    "price": "11.50"
+  }
+},
+{
+  "model": "restaurant.orderitem",
+  "pk": 2,
+  "fields": {
+    "order": 3,
+    "menu_item": 1,
+    "quantity": 2,
+    "price": "11.50"
+  }
+},
+{
+  "model": "restaurant.orderitem",
+  "pk": 3,
+  "fields": {
+    "order": 4,
+    "menu_item": 1,
+    "quantity": 1,
+    "price": "11.50"
+  }
+},
+{
+  "model": "restaurant.orderitem",
+  "pk": 4,
+  "fields": {
+    "order": 5,
+    "menu_item": 1,
+    "quantity": 3,
+    "price": "11.50"
+  }
+},
+{
+  "model": "restaurant.orderitem",
+  "pk": 5,
+  "fields": {
+    "order": 5,
+    "menu_item": 2,
+    "quantity": 3,
+    "price": "13.50"
+  }
+},
+{
+  "model": "restaurant.orderitem",
+  "pk": 6,
+  "fields": {
+    "order": 6,
+    "menu_item": 1,
+    "quantity": 3,
+    "price": "11.50"
+  }
+},
+{
+  "model": "restaurant.orderitem",
+  "pk": 7,
+  "fields": {
+    "order": 6,
+    "menu_item": 2,
+    "quantity": 3,
+    "price": "13.50"
+  }
+},
+{
+  "model": "restaurant.orderitem",
+  "pk": 8,
+  "fields": {
+    "order": 7,
+    "menu_item": 1,
+    "quantity": 3,
+    "price": "11.50"
+  }
+},
+{
+  "model": "restaurant.orderitem",
+  "pk": 9,
+  "fields": {
+    "order": 7,
+    "menu_item": 2,
+    "quantity": 3,
+    "price": "13.50"
+  }
+},
+{
+  "model": "restaurant.orderitem",
+  "pk": 10,
+  "fields": {
+    "order": 8,
+    "menu_item": 2,
+    "quantity": 6,
+    "price": "13.50"
+  }
+},
+{
+  "model": "restaurant.orderitem",
+  "pk": 11,
+  "fields": {
+    "order": 8,
+    "menu_item": 3,
+    "quantity": 3,
+    "price": "14.00"
+  }
+},
+{
+  "model": "restaurant.orderitem",
+  "pk": 12,
+  "fields": {
+    "order": 8,
+    "menu_item": 4,
+    "quantity": 3,
+    "price": "10.50"
+  }
+},
+{
+  "model": "restaurant.orderitem",
+  "pk": 13,
+  "fields": {
+    "order": 8,
+    "menu_item": 8,
+    "quantity": 3,
+    "price": "24.00"
+  }
+},
+{
+  "model": "restaurant.orderitem",
+  "pk": 14,
+  "fields": {
+    "order": 8,
+    "menu_item": 7,
+    "quantity": 3,
+    "price": "19.50"
+  }
+},
+{
+  "model": "restaurant.orderitem",
+  "pk": 15,
+  "fields": {
+    "order": 8,
+    "menu_item": 6,
+    "quantity": 2,
+    "price": "22.00"
+  }
+},
+{
+  "model": "restaurant.orderitem",
+  "pk": 16,
+  "fields": {
+    "order": 9,
+    "menu_item": 1,
+    "quantity": 3,
+    "price": "11.50"
+  }
+},
+{
+  "model": "restaurant.orderitem",
+  "pk": 17,
+  "fields": {
+    "order": 9,
+    "menu_item": 2,
+    "quantity": 3,
+    "price": "13.50"
+  }
+},
+{
+  "model": "restaurant.orderitem",
+  "pk": 18,
+  "fields": {
+    "order": 9,
+    "menu_item": 3,
+    "quantity": 3,
+    "price": "14.00"
+  }
+},
+{
+  "model": "restaurant.orderitem",
+  "pk": 19,
+  "fields": {
+    "order": 9,
+    "menu_item": 4,
+    "quantity": 3,
+    "price": "10.50"
+  }
+},
+{
+  "model": "restaurant.orderitem",
+  "pk": 20,
+  "fields": {
+    "order": 9,
+    "menu_item": 5,
+    "quantity": 3,
+    "price": "28.00"
+  }
+},
+{
+  "model": "restaurant.orderitem",
+  "pk": 21,
+  "fields": {
+    "order": 9,
+    "menu_item": 6,
+    "quantity": 3,
+    "price": "22.00"
+  }
+},
+{
+  "model": "restaurant.orderitem",
+  "pk": 22,
+  "fields": {
+    "order": 9,
+    "menu_item": 7,
+    "quantity": 3,
+    "price": "19.50"
+  }
+},
+{
+  "model": "restaurant.orderitem",
+  "pk": 23,
+  "fields": {
+    "order": 9,
+    "menu_item": 8,
+    "quantity": 4,
+    "price": "24.00"
+  }
+},
+{
+  "model": "restaurant.orderitem",
+  "pk": 24,
+  "fields": {
+    "order": 9,
+    "menu_item": 9,
+    "quantity": 3,
+    "price": "5.50"
+  }
+},
+{
+  "model": "restaurant.orderitem",
+  "pk": 25,
+  "fields": {
+    "order": 9,
+    "menu_item": 10,
+    "quantity": 5,
+    "price": "6.00"
+  }
+},
+{
+  "model": "restaurant.orderitem",
+  "pk": 26,
+  "fields": {
+    "order": 9,
+    "menu_item": 11,
+    "quantity": 4,
+    "price": "7.50"
+  }
+},
+{
+  "model": "restaurant.orderitem",
+  "pk": 27,
+  "fields": {
+    "order": 9,
+    "menu_item": 12,
+    "quantity": 2,
+    "price": "6.00"
+  }
+},
+{
+  "model": "restaurant.orderitem",
+  "pk": 28,
+  "fields": {
+    "order": 9,
+    "menu_item": 13,
+    "quantity": 3,
+    "price": "8.50"
+  }
+},
+{
+  "model": "restaurant.orderitem",
+  "pk": 29,
+  "fields": {
+    "order": 9,
+    "menu_item": 14,
+    "quantity": 2,
+    "price": "8.00"
+  }
+},
+{
+  "model": "restaurant.orderitem",
+  "pk": 30,
+  "fields": {
+    "order": 9,
+    "menu_item": 15,
+    "quantity": 3,
+    "price": "8.00"
+  }
+},
+{
+  "model": "restaurant.orderitem",
+  "pk": 31,
+  "fields": {
+    "order": 9,
+    "menu_item": 16,
+    "quantity": 2,
+    "price": "6.50"
+  }
+},
+{
+  "model": "restaurant.orderitem",
+  "pk": 32,
+  "fields": {
+    "order": 9,
+    "menu_item": 17,
+    "quantity": 3,
+    "price": "10.00"
+  }
+},
+{
+  "model": "restaurant.orderitem",
+  "pk": 33,
+  "fields": {
+    "order": 9,
+    "menu_item": 19,
+    "quantity": 2,
+    "price": "8.00"
+  }
+},
+{
+  "model": "restaurant.orderitem",
+  "pk": 34,
+  "fields": {
+    "order": 10,
+    "menu_item": 1,
+    "quantity": 3,
+    "price": "11.50"
+  }
+},
+{
+  "model": "restaurant.orderitem",
+  "pk": 35,
+  "fields": {
+    "order": 10,
+    "menu_item": 2,
+    "quantity": 2,
+    "price": "13.50"
+  }
+},
+{
+  "model": "restaurant.orderitem",
+  "pk": 36,
+  "fields": {
+    "order": 11,
+    "menu_item": 1,
+    "quantity": 3,
+    "price": "11.50"
+  }
+},
+{
+  "model": "restaurant.orderitem",
+  "pk": 37,
+  "fields": {
+    "order": 11,
+    "menu_item": 2,
+    "quantity": 4,
+    "price": "13.50"
+  }
+},
+{
+  "model": "restaurant.orderitem",
+  "pk": 38,
+  "fields": {
+    "order": 11,
+    "menu_item": 3,
+    "quantity": 3,
+    "price": "14.00"
+  }
+},
+{
+  "model": "restaurant.orderitem",
+  "pk": 39,
+  "fields": {
+    "order": 11,
+    "menu_item": 4,
+    "quantity": 1,
+    "price": "10.50"
+  }
+},
+{
+  "model": "restaurant.orderitem",
+  "pk": 40,
+  "fields": {
+    "order": 12,
+    "menu_item": 2,
+    "quantity": 3,
+    "price": "13.50"
+  }
+},
+{
+  "model": "restaurant.orderitem",
+  "pk": 41,
+  "fields": {
+    "order": 13,
+    "menu_item": 2,
+    "quantity": 5,
+    "price": "13.50"
+  }
+},
+{
+  "model": "restaurant.orderitem",
+  "pk": 42,
+  "fields": {
+    "order": 13,
+    "menu_item": 4,
+    "quantity": 1,
+    "price": "10.50"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2026-08-24T22:32:37.217Z",
+    "user": [
+      "umar"
+    ],
+    "content_type": [
+      "restaurant",
+      "menuitem"
+    ],
+    "object_id": "1",
+    "object_repr": "MenuItem object (1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2026-08-25T17:04:20.254Z",
+    "user": [
+      "umar"
+    ],
+    "content_type": [
+      "restaurant",
+      "menuitem"
+    ],
+    "object_id": "1",
+    "object_repr": "MenuItem object (1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2026-08-25T17:06:15.562Z",
+    "user": [
+      "umar"
+    ],
+    "content_type": [
+      "restaurant",
+      "menuitem"
+    ],
+    "object_id": "2",
+    "object_repr": "MenuItem object (2)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2026-08-25T17:07:01.728Z",
+    "user": [
+      "umar"
+    ],
+    "content_type": [
+      "restaurant",
+      "menuitem"
+    ],
+    "object_id": "3",
+    "object_repr": "MenuItem object (3)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2026-08-25T17:07:39.196Z",
+    "user": [
+      "umar"
+    ],
+    "content_type": [
+      "restaurant",
+      "menuitem"
+    ],
+    "object_id": "4",
+    "object_repr": "MenuItem object (4)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2026-08-25T17:08:36.138Z",
+    "user": [
+      "umar"
+    ],
+    "content_type": [
+      "restaurant",
+      "menuitem"
+    ],
+    "object_id": "5",
+    "object_repr": "MenuItem object (5)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2026-08-25T17:09:06.346Z",
+    "user": [
+      "umar"
+    ],
+    "content_type": [
+      "restaurant",
+      "menuitem"
+    ],
+    "object_id": "6",
+    "object_repr": "MenuItem object (6)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2026-08-25T17:09:40.577Z",
+    "user": [
+      "umar"
+    ],
+    "content_type": [
+      "restaurant",
+      "menuitem"
+    ],
+    "object_id": "7",
+    "object_repr": "MenuItem object (7)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2026-08-25T17:10:13.584Z",
+    "user": [
+      "umar"
+    ],
+    "content_type": [
+      "restaurant",
+      "menuitem"
+    ],
+    "object_id": "8",
+    "object_repr": "MenuItem object (8)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2026-08-25T17:11:04.384Z",
+    "user": [
+      "umar"
+    ],
+    "content_type": [
+      "restaurant",
+      "menuitem"
+    ],
+    "object_id": "9",
+    "object_repr": "MenuItem object (9)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2026-08-25T17:11:37.275Z",
+    "user": [
+      "umar"
+    ],
+    "content_type": [
+      "restaurant",
+      "menuitem"
+    ],
+    "object_id": "10",
+    "object_repr": "MenuItem object (10)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2026-08-25T17:12:07.243Z",
+    "user": [
+      "umar"
+    ],
+    "content_type": [
+      "restaurant",
+      "menuitem"
+    ],
+    "object_id": "11",
+    "object_repr": "MenuItem object (11)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2026-08-25T17:12:43.003Z",
+    "user": [
+      "umar"
+    ],
+    "content_type": [
+      "restaurant",
+      "menuitem"
+    ],
+    "object_id": "12",
+    "object_repr": "MenuItem object (12)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2026-08-25T17:13:10.306Z",
+    "user": [
+      "umar"
+    ],
+    "content_type": [
+      "restaurant",
+      "menuitem"
+    ],
+    "object_id": "13",
+    "object_repr": "MenuItem object (13)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2026-08-25T17:13:39.812Z",
+    "user": [
+      "umar"
+    ],
+    "content_type": [
+      "restaurant",
+      "menuitem"
+    ],
+    "object_id": "14",
+    "object_repr": "MenuItem object (14)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2026-08-25T17:14:17.374Z",
+    "user": [
+      "umar"
+    ],
+    "content_type": [
+      "restaurant",
+      "menuitem"
+    ],
+    "object_id": "15",
+    "object_repr": "MenuItem object (15)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2026-08-25T17:15:32.942Z",
+    "user": [
+      "umar"
+    ],
+    "content_type": [
+      "restaurant",
+      "menuitem"
+    ],
+    "object_id": "16",
+    "object_repr": "MenuItem object (16)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2026-08-25T17:16:10.024Z",
+    "user": [
+      "umar"
+    ],
+    "content_type": [
+      "restaurant",
+      "menuitem"
+    ],
+    "object_id": "17",
+    "object_repr": "MenuItem object (17)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2026-08-25T17:16:35.970Z",
+    "user": [
+      "umar"
+    ],
+    "content_type": [
+      "restaurant",
+      "menuitem"
+    ],
+    "object_id": "18",
+    "object_repr": "MenuItem object (18)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2026-08-25T17:17:09.652Z",
+    "user": [
+      "umar"
+    ],
+    "content_type": [
+      "restaurant",
+      "menuitem"
+    ],
+    "object_id": "19",
+    "object_repr": "MenuItem object (19)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2026-08-25T17:17:50.351Z",
+    "user": [
+      "umar"
+    ],
+    "content_type": [
+      "restaurant",
+      "menuitem"
+    ],
+    "object_id": "20",
+    "object_repr": "MenuItem object (20)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2026-08-25T17:18:34.096Z",
+    "user": [
+      "umar"
+    ],
+    "content_type": [
+      "restaurant",
+      "menuitem"
+    ],
+    "object_id": "1",
+    "object_repr": "MenuItem object (1)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+}
+]
