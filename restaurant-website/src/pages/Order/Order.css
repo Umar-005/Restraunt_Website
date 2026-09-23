@@ -123,7 +123,9 @@
     display: flex;
     align-items: center;
     gap: 12px;
+
     padding: 15px 25px;
+
     background-color: var(--bg-card);
     border: 1px solid var(--border-primary);
     border-radius: var(--radius-md);
@@ -595,9 +597,9 @@
 ========================= */
 
 .order-confirmation {
-    width: min(1400px, 92%);
-    margin: 0 auto 60px;
-    padding: 25px;
+    width: min(700px, 92%);
+    margin: 40px auto 60px;
+    padding: 40px;
 
     box-sizing: border-box;
 
@@ -609,17 +611,91 @@
 }
 
 .order-confirmation h2 {
-    margin: 0 0 10px;
+    margin: 0 0 12px;
 
     color: var(--accent-primary);
 
     font-family: var(--font-heading);
-    font-size: var(--text-xl);
+    font-size: var(--text-2xl);
     font-weight: var(--fw-regular);
 }
 
-.order-confirmation p {
-    margin: 6px 0;
+.order-confirmation > p {
+    margin: 8px 0;
+    color: var(--text-secondary);
+}
+
+
+/* ORDER ITEMS */
+
+.confirmation-items {
+    margin: 30px auto 0;
+    max-width: 500px;
+
+    text-align: left;
+}
+
+.confirmation-items h3 {
+    margin: 0 0 18px;
+
+    font-family: var(--font-heading);
+    font-size: var(--text-lg);
+    font-weight: var(--fw-regular);
+
+    text-align: center;
+}
+
+.confirmation-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 10px 0;
+
+    border-bottom: 1px solid var(--border-primary);
+
+    color: var(--text-secondary);
+}
+
+.confirmation-item span:first-child {
+    flex: 1;
+}
+
+.confirmation-item span:last-child {
+    color: var(--text-primary);
+    font-weight: var(--fw-semibold);
+    white-space: nowrap;
+}
+
+
+/* TOTAL */
+
+.confirmation-total {
+    max-width: 500px;
+    margin: 18px auto 0;
+    padding-top: 15px;
+
+    display: flex;
+    justify-content: space-between;
+
+    border-top: 1px solid var(--border-primary);
+
+    font-size: var(--text-lg);
+    font-weight: var(--fw-semibold);
+}
+
+.confirmation-total span:last-child {
+    color: var(--accent-primary);
+}
+
+
+/* FINAL MESSAGE */
+
+.order-confirmation > p:last-child {
+    margin-top: 25px;
+
     color: var(--text-secondary);
 }
 
@@ -944,7 +1020,20 @@
 
     .order-confirmation {
         width: 92%;
-        padding: 20px;
+        padding: 25px 20px;
+    }
+
+    .confirmation-items {
+        width: 100%;
+    }
+
+    .confirmation-item {
+        gap: 10px;
+        font-size: var(--text-sm);
+    }
+
+    .confirmation-total {
+        font-size: var(--text-md);
     }
 
 }

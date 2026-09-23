@@ -126,10 +126,22 @@ function Dashboard() {
     }, []);
 
 
+    /*
+     * Get today's date using the user's local timezone.
+     *
+     * Using toISOString() here would convert the date
+     * to UTC, which can cause "today" to be one day
+     * different from the restaurant's local date.
+     */
 
+    const now = new Date();
 
     const today =
-        new Date().toISOString().split("T")[0];
+        `${now.getFullYear()}-${String(
+            now.getMonth() + 1
+        ).padStart(2, "0")}-${String(
+            now.getDate()
+        ).padStart(2, "0")}`;
 
 
     const todaysOrders =
@@ -140,9 +152,8 @@ function Dashboard() {
 
     const todaysReservations =
         reservations.filter(reservation =>
-            reservation.date === today
+            reservation.date?.slice(0, 10) === today
         );
-
 
 
     const pendingOrders =
@@ -173,7 +184,7 @@ function Dashboard() {
             .slice(0, 5);
 
 
-    // Today's reservations Earliest reservation first.
+    // Today's reservations — earliest reservation first.
 
     const recentReservations =
         [...todaysReservations]
@@ -184,7 +195,7 @@ function Dashboard() {
             .slice(0, 5);
 
 
-    //  Format today's date 
+    // Format today's date.
 
     const displayDate =
         new Date().toLocaleDateString(
