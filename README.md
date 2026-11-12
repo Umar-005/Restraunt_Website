@@ -6,6 +6,8 @@ A full-stack restaurant booking and ordering system built with React and Django 
 
 🌐 **[View the Live Website](https://restraunt-website-neon.vercel.app/)**
 
+> **⚠️ Initial Loading Time:** The backend is hosted on Render's free tier and goes to sleep after periods of inactivity. If the website hasn't been accessed recently, please allow approximately **30–60 seconds** for the backend to start up and load the data. Once active, the website should respond normally.
+
 ## Overview
 
 Kitchen 27 is a full-stack restaurant web application designed to provide customers with an online menu, food ordering and table reservation system, alongside a staff dashboard for managing the restaurant.
