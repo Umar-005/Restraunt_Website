@@ -154,7 +154,8 @@ class ReservationViewSet(viewsets.ModelViewSet):
         if serializer.is_valid():
 
             reservation = serializer.save(
-                table=available_table
+                table=available_table,
+                status="Pending"
             )
 
             try:
@@ -203,20 +204,6 @@ class OrderViewSet(viewsets.ModelViewSet):
             return [AllowAny()]
 
         return [IsStaff()]
-
-    def partial_update(self, request, *args, **kwargs):
-
-        print("PATCH DATA:", request.data)
-
-        response = super().partial_update(
-            request,
-            *args,
-            **kwargs
-        )
-
-        print("PATCH RESPONSE:", response.data)
-
-        return response
 
     def create(self, request, *args, **kwargs):
 
@@ -303,7 +290,7 @@ class OrderViewSet(viewsets.ModelViewSet):
 
         order_data = serializer.validated_data.copy()
 
-        order_data.pop("items")
+        order_data.pop("items", None)
 
         # Create the Order and all OrderItems
         # inside one database transaction.
@@ -312,7 +299,8 @@ class OrderViewSet(viewsets.ModelViewSet):
 
             order = Order.objects.create(
                 **order_data,
-                total=total
+                total=total,
+                status="Pending"
             )
 
             for item in order_items:
@@ -702,9 +690,11 @@ def login(request):
             status=status.HTTP_403_FORBIDDEN
         )
 
-    token, created = Token.objects.get_or_create(
-        user=user
-    )
+    with transaction.atomic():
+        # Serialize concurrent logins for this account before rotating its token.
+        User.objects.select_for_update().get(pk=user.pk)
+        Token.objects.filter(user=user).delete()
+        token = Token.objects.create(user=user)
 
     return Response(
         {

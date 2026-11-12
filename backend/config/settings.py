@@ -7,12 +7,16 @@ import dj_database_url
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-SECRET_KEY = os.environ.get(
-    "DJANGO_SECRET_KEY",
-    "django-insecure-(6b9rk#sgqe6kb4o95^=i@sktu9(ksa)ka9c+5^u3zs%+%kkyd"
-)
+from django.core.exceptions import ImproperlyConfigured
 
-DEBUG = os.environ.get("DEBUG", "True") == "True"
+SECRET_KEY = os.environ.get("DJANGO_SECRET_KEY", "").strip()
+if not SECRET_KEY or SECRET_KEY.startswith("django-insecure-"):
+    raise ImproperlyConfigured("Set DJANGO_SECRET_KEY to a new, securely generated secret.")
+
+_debug = os.environ.get("DEBUG", "False").lower()
+if _debug not in {"true", "false"}:
+    raise ImproperlyConfigured("DEBUG must be True or False.")
+DEBUG = _debug == "true"
 
 ALLOWED_HOSTS = os.environ.get(
     "ALLOWED_HOSTS",

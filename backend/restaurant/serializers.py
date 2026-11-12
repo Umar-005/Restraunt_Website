@@ -1,6 +1,5 @@
 from datetime import date, time, timedelta
 from django.contrib.auth.models import User
-from django.contrib.auth.models import User
 
 from rest_framework import serializers
 
@@ -20,7 +19,19 @@ class MenuItemSerializer(serializers.ModelSerializer):
         fields = "__all__"
 
 
-class ReservationSerializer(serializers.ModelSerializer):
+class StaffStatusSerializer(serializers.ModelSerializer):
+    """Only staff updating an existing record may supply a status."""
+
+    def get_fields(self):
+        fields = super().get_fields()
+        request = self.context.get("request")
+        user = getattr(request, "user", None)
+        if not (self.instance is not None and user and user.is_authenticated and user.is_staff):
+            fields["status"].read_only = True
+        return fields
+
+
+class ReservationSerializer(StaffStatusSerializer):
 
     table_number = serializers.IntegerField(
         source="table.table_number",
@@ -159,7 +170,7 @@ class OrderItemSerializer(serializers.ModelSerializer):
         ]
 
 
-class OrderSerializer(serializers.ModelSerializer):
+class OrderSerializer(StaffStatusSerializer):
 
     items = OrderItemSerializer(
         many=True

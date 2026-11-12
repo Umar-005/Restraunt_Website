@@ -5,3 +5,8 @@ db.sqlite3
 .env
 node_modules/
 dist/
+
+# Sensitive database exports
+backend/data.json
+backend/media/
+backend/staticfiles/
